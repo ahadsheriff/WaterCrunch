@@ -14,6 +14,7 @@
 		7BDD72B71C76951C002198EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD72B51C76951C002198EC /* LaunchScreen.storyboard */; };
 		7BDD72C21C76951C002198EC /* WaterCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72C11C76951C002198EC /* WaterCrunchTests.swift */; };
 		7BDD72CD1C76951C002198EC /* WaterCrunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72CC1C76951C002198EC /* WaterCrunchUITests.swift */; };
+		7BDD72DD1C769705002198EC /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72DC1C769705002198EC /* PushButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7BDD72C81C76951C002198EC /* WaterCrunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterCrunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDD72CC1C76951C002198EC /* WaterCrunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCrunchUITests.swift; sourceTree = "<group>"; };
 		7BDD72CE1C76951C002198EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDD72DC1C769705002198EC /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7BDD72AC1C76951C002198EC /* AppDelegate.swift */,
 				7BDD72AE1C76951C002198EC /* ViewController.swift */,
+				7BDD72DC1C769705002198EC /* PushButtonView.swift */,
 				7BDD72B01C76951C002198EC /* Main.storyboard */,
 				7BDD72B31C76951C002198EC /* Assets.xcassets */,
 				7BDD72B51C76951C002198EC /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BDD72AF1C76951C002198EC /* ViewController.swift in Sources */,
+				7BDD72DD1C769705002198EC /* PushButtonView.swift in Sources */,
 				7BDD72AD1C76951C002198EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
