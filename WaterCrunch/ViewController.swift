@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var graphView: GraphView!
     
+    //Label outlets
+    @IBOutlet weak var averageWaterDrunk: UILabel!
+    @IBOutlet weak var maxLabel: UILabel!
+    
     @IBAction func counterViewTap(gesture:UITapGestureRecognizer?) {
         
         if (isGraphViewShowing) {
@@ -76,6 +80,8 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
 
 }
 
