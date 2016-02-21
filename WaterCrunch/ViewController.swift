@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isGraphViewShowing = false
+    
     //Counter outlets
     
     @IBOutlet weak var counterView: CounterView!
@@ -18,6 +20,33 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var graphView: GraphView!
+    
+    @IBAction func counterViewTap(gesture:UITapGestureRecognizer?) {
+        
+        if (isGraphViewShowing) {
+            
+            //hide Graph
+            UIView.transitionFromView(graphView,
+                toView: counterView,
+                duration: 1.0,
+                options: [.TransitionFlipFromLeft, .ShowHideTransitionViews],
+                completion:nil)
+        }
+        
+        else {
+            
+            //show Graph
+            UIView.transitionFromView(counterView,
+                toView: graphView,
+                duration: 1.0,
+                options: [.TransitionFlipFromRight, .ShowHideTransitionViews],
+                completion: nil)
+        }
+        
+        isGraphViewShowing = !isGraphViewShowing
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +70,11 @@ class ViewController: UIViewController {
             }
         }
         counterLabel.text = String(counterView.counter)
+        
+        if isGraphViewShowing {
+            counterViewTap(nil)
+        }
+        
     }
 
 }
