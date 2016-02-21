@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B5A77BC1C7A471100246F37 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A77BB1C7A471100246F37 /* CounterView.swift */; };
+		7B5A77BE1C7A5DCA00246F37 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A77BD1C7A5DCA00246F37 /* GraphView.swift */; };
 		7BDD72AD1C76951C002198EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72AC1C76951C002198EC /* AppDelegate.swift */; };
 		7BDD72AF1C76951C002198EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72AE1C76951C002198EC /* ViewController.swift */; };
 		7BDD72B21C76951C002198EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD72B01C76951C002198EC /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		7B5A77BB1C7A471100246F37 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		7B5A77BD1C7A5DCA00246F37 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		7BDD72A91C76951C002198EC /* WaterCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDD72AC1C76951C002198EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BDD72AE1C76951C002198EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				7BDD72AE1C76951C002198EC /* ViewController.swift */,
 				7BDD72DC1C769705002198EC /* PushButtonView.swift */,
 				7B5A77BB1C7A471100246F37 /* CounterView.swift */,
+				7B5A77BD1C7A5DCA00246F37 /* GraphView.swift */,
 				7BDD72B01C76951C002198EC /* Main.storyboard */,
 				7BDD72B31C76951C002198EC /* Assets.xcassets */,
 				7BDD72B51C76951C002198EC /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5A77BE1C7A5DCA00246F37 /* GraphView.swift in Sources */,
 				7BDD72AF1C76951C002198EC /* ViewController.swift in Sources */,
 				7BDD72DD1C769705002198EC /* PushButtonView.swift in Sources */,
 				7BDD72AD1C76951C002198EC /* AppDelegate.swift in Sources */,

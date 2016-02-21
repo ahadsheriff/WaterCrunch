@@ -17,29 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-hF-MVk" customClass="CounterView" customModule="WaterCrunch" customModuleProvider="target">
-                                <rect key="frame" x="185" y="70" width="230" height="230"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-sz-BZT" userLabel="ContainerView">
+                                <rect key="frame" x="150" y="50" width="300" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIf-1i-hl7">
-                                        <rect key="frame" x="93" y="93" width="44" height="44"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-hF-MVk" customClass="CounterView" customModule="WaterCrunch" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="35" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIf-1i-hl7">
+                                                <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.0" green="0.5103168754099352" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.0" green="0.86002804789042908" blue="0.88735274869109948" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDQ-PW-Ak1" customClass="GraphView" customModule="WaterCrunch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.83058899876971171" green="1" blue="0.29020379551885878" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="g6Z-rQ-mZJ"/>
-                                    <constraint firstAttribute="width" constant="230" id="igR-KE-JT7"/>
+                                    <constraint firstAttribute="height" constant="300" id="8zO-lP-qmh"/>
+                                    <constraint firstAttribute="width" constant="300" id="D1B-gb-S9I"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.0" green="0.5103168754099352" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.0" green="0.86002804789042908" blue="0.88735274869109948" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-SE-YjG" customClass="PushButtonView" customModule="WaterCrunch" customModuleProvider="target">
                                 <rect key="frame" x="250" y="350" width="100" height="100"/>
@@ -76,8 +86,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dwW-SE-YjG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="99" id="72B-Cf-HPS"/>
-                            <constraint firstItem="dwW-SE-YjG" firstAttribute="top" secondItem="K4g-hF-MVk" secondAttribute="bottom" constant="50" id="Hu3-oK-qwr"/>
-                            <constraint firstItem="K4g-hF-MVk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UTj-x8-fYp"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="top" secondItem="dwW-SE-YjG" secondAttribute="bottom" constant="30" id="UxX-9E-jjD"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="centerX" secondItem="dwW-SE-YjG" secondAttribute="centerX" id="iBb-lc-NJg"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="205" id="wFe-q3-ep7"/>
@@ -85,8 +93,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="4DY-sz-BZT" id="OFN-eB-dMH"/>
                         <outlet property="counterLabel" destination="PIf-1i-hl7" id="fYF-f7-76P"/>
                         <outlet property="counterView" destination="K4g-hF-MVk" id="qfs-Jb-ES3"/>
+                        <outlet property="graphView" destination="mDQ-PW-Ak1" id="MV5-10-CZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
