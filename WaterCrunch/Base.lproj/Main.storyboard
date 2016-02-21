@@ -17,7 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-SE-YjG" customClass="PushButtonView" customModule="WaterCrunch" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-hF-MVk" customClass="CounterView" customModule="WaterCrunch" customModuleProvider="target">
+                                <rect key="frame" x="185" y="70" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIf-1i-hl7">
+                                        <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="g6Z-rQ-mZJ"/>
+                                    <constraint firstAttribute="width" constant="230" id="igR-KE-JT7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.0" green="0.5103168754099352" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.0" green="0.97419522018044713" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-SE-YjG" customClass="PushButtonView" customModule="WaterCrunch" customModuleProvider="target">
                                 <rect key="frame" x="250" y="350" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Q3j-RI-UF9"/>
@@ -46,6 +70,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dwW-SE-YjG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="99" id="72B-Cf-HPS"/>
+                            <constraint firstItem="dwW-SE-YjG" firstAttribute="top" secondItem="K4g-hF-MVk" secondAttribute="bottom" constant="50" id="Hu3-oK-qwr"/>
+                            <constraint firstItem="K4g-hF-MVk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UTj-x8-fYp"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="top" secondItem="dwW-SE-YjG" secondAttribute="bottom" constant="30" id="UxX-9E-jjD"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="centerX" secondItem="dwW-SE-YjG" secondAttribute="centerX" id="iBb-lc-NJg"/>
                             <constraint firstItem="D8d-n8-ltD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="205" id="wFe-q3-ep7"/>

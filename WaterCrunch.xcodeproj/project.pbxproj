@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5A77BC1C7A471100246F37 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A77BB1C7A471100246F37 /* CounterView.swift */; };
 		7BDD72AD1C76951C002198EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72AC1C76951C002198EC /* AppDelegate.swift */; };
 		7BDD72AF1C76951C002198EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD72AE1C76951C002198EC /* ViewController.swift */; };
 		7BDD72B21C76951C002198EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD72B01C76951C002198EC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B5A77BB1C7A471100246F37 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		7BDD72A91C76951C002198EC /* WaterCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDD72AC1C76951C002198EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BDD72AE1C76951C002198EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				7BDD72AC1C76951C002198EC /* AppDelegate.swift */,
 				7BDD72AE1C76951C002198EC /* ViewController.swift */,
 				7BDD72DC1C769705002198EC /* PushButtonView.swift */,
+				7B5A77BB1C7A471100246F37 /* CounterView.swift */,
 				7BDD72B01C76951C002198EC /* Main.storyboard */,
 				7BDD72B31C76951C002198EC /* Assets.xcassets */,
 				7BDD72B51C76951C002198EC /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				7BDD72AF1C76951C002198EC /* ViewController.swift in Sources */,
 				7BDD72DD1C769705002198EC /* PushButtonView.swift in Sources */,
 				7BDD72AD1C76951C002198EC /* AppDelegate.swift in Sources */,
+				7B5A77BC1C7A471100246F37 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 				7BDD72D31C76951C002198EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BDD72D41C76951C002198EC /* Build configuration list for PBXNativeTarget "WaterCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				7BDD72D61C76951C002198EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BDD72D71C76951C002198EC /* Build configuration list for PBXNativeTarget "WaterCrunchUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				7BDD72D91C76951C002198EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
