@@ -70,10 +70,14 @@ import UIKit
         let topBorder:CGFloat = 60
         let bottomBorder:CGFloat = 50
         let graphHeight = height - topBorder - bottomBorder
-        let maxValue = graphPoints.maxElement()
+        
+        
+        //let maxValue = graphPoints.maxElement()
+        let maxValue = maxElement(graphPoints)
+        
         let columnYPoint = { (graphPoint:Int) -> CGFloat in
             var y:CGFloat = CGFloat(graphPoint) /
-                CGFloat(maxValue!) * graphHeight
+                CGFloat(maxValue) * graphHeight
             y = graphHeight + topBorder - y // Flip the graph
             return y
         }
@@ -118,7 +122,7 @@ import UIKit
         clippingPath.addClip()
         
         //5 - check clipping path
-        let highestYPoint = columnYPoint(maxValue!)
+        let highestYPoint = columnYPoint(maxValue)
         startPoint = CGPoint(x:margin, y: highestYPoint)
         endPoint = CGPoint(x:margin, y:self.bounds.height)
         
@@ -167,6 +171,17 @@ import UIKit
         linePath.stroke()
         
     }
+    
+    func maxElement(arr: [Int]) -> Int {
+        var max = 0
+        for i in arr {
+            if i > max {
+                max = i
+            }
+        }
+        return max
+    }
+    
 }
 
 

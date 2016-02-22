@@ -188,7 +188,7 @@
                         <outlet property="counterLabel" destination="PIf-1i-hl7" id="fYF-f7-76P"/>
                         <outlet property="counterView" destination="K4g-hF-MVk" id="qfs-Jb-ES3"/>
                         <outlet property="graphView" destination="mDQ-PW-Ak1" id="MV5-10-CZ4"/>
-                        <outlet property="maxLabel" destination="Ibt-Ev-SDK" id="dbB-Ej-htB"/>
+                        <outlet property="maxLabel" destination="Ibt-Ev-SDK" id="GBG-xx-N8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
