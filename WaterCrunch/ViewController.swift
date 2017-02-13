@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var averageWaterDrunk: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
     
+    
+    /*
     @IBAction func counterViewTap(gesture:UITapGestureRecognizer?) {
         
         if (isGraphViewShowing) {
@@ -52,6 +54,7 @@ class ViewController: UIViewController {
         isGraphViewShowing = !isGraphViewShowing
         
     }
+ */
     
 
     override func viewDidLoad() {
@@ -68,6 +71,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnPushButton(button: PushButtonView) {
+        print("here")
         if button.isAddButton {
             counterView.counter += 1
         } else {
@@ -77,12 +81,15 @@ class ViewController: UIViewController {
         }
         counterLabel.text = String(counterView.counter)
         
+        /*
         if isGraphViewShowing {
             counterViewTap(gesture: nil)
         }
+ */
         
     }
     
+    /*
     func setupGraphDisplay() {
         
         //Use 7 days for graph - can use any number,
@@ -108,10 +115,10 @@ class ViewController: UIViewController {
         //today is last day of the array need to go backwards
         
         //4 - get today's day number
-        //let dateFormatter = NSDateFormatter()
-        let calendar = NSCalendar.current
-        let componentOptions:NSCalendar.Unit = .weekday
-        let components = calendar.components(componentOptions, fromDate: NSDate())
+        
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.weekday], from: Date())
+        
         var weekday = components.weekday
         
         let days = ["S", "S", "M", "T", "W", "T", "F"]
@@ -123,13 +130,15 @@ class ViewController: UIViewController {
                     weekday = 0
                 }
                 weekday -= 1
-                labelView.text = days[weekday]
-                if weekday < 0 {
+                labelView.text = days[(weekday)!]
+                if weekday! < 0 {
                     weekday = days.count - 1
                 }
             }
         }
     }
+    
+    */
 
 }
 
